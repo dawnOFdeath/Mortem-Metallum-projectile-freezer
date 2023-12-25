@@ -4,16 +4,20 @@ local bc = plr.Backpack
 local char = plr.Character
 local gren
 if bc:FindFirstChild("Grenade") then
-   bc.Grenade.Parent = char
+   bc["Fire bomb"].Parent = char
 end
 task.wait()
 if char:FindFirstChild("Grenade") then
    for spam = 1, 1000 do
-      Grenade.start:FireServer()
+      --throw doesnt need args
+      char["Grenade"].start:FireServer()
       wait(0.000000000001)
    end
    for spam = 1, 1000 do
-      gren.throw:FireServer()
+      local args = {
+       [1] = --your args. i cant rembember it after 1 year
+      }
+      char["Grenade"].throw:FireServer(unpack(args))
       wait(0.000000000001)
    end
    print("frozen")
