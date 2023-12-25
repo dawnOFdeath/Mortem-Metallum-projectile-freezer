@@ -1,0 +1,24 @@
+print("sudz")
+local plr = game.Players.LocalPlayer
+local bc = plr.Backpack
+local char = plr.Character
+local fire
+if bc:FindFirstChild("Fire bomb") then
+   bc["Fire bomb"].Parent = char
+end
+task.wait()
+if char:FindFirstChild("Fire bomb") then
+   for spam = 1, 1000 do
+      --throw doesnt need args
+      char["Fire bomb"].start:FireServer()
+      wait(0.000000000001)
+   end
+   for spam = 1, 1000 do
+      local args = {
+       [1] = --your args. i cant rembember it after 1 year
+      }
+      char["Fire bomb"].throw:FireServer(unpack(args))
+      wait(0.000000000001)
+   end
+   print("frozen")
+end
