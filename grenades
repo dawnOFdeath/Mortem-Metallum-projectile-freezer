@@ -4,7 +4,7 @@ local bc = plr.Backpack
 local char = plr.Character
 local gren
 if bc:FindFirstChild("Grenade") then
-   bc["Fire bomb"].Parent = char
+   bc["Grenade"].Parent = char
 end
 task.wait()
 if char:FindFirstChild("Grenade") then
