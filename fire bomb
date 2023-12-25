@@ -20,5 +20,5 @@ if char:FindFirstChild("Fire bomb") then
       char["Fire bomb"].throw:FireServer(unpack(args))
       wait(0.000000000001)
    end
-   print("frozen")
+   print("frozen now.")
 end
