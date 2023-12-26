@@ -9,7 +9,7 @@ end
 task.wait()
 if char:FindFirstChild("Fire bomb") then
    for spam = 1, 1000 do
-      --throw doesnt need args
+      --start doesnt need args
       char["Fire bomb"].start:FireServer()
       wait(0.000000000001)
    end
