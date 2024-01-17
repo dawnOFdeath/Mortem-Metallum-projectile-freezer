@@ -1,5 +1,5 @@
 a mortem metallum script made to crash&trash the ping for any server
-please make sure to dupe while doing it. more projectiles equal to more fps drops &ping drops
+please make sure to dupe while doing it. more projectiles equal to more fps drops drops
 https://www.roblox.com/games/4169490976/Mortem-Metallum-Alpha
 
 # coding language used:
